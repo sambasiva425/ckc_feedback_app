@@ -1,0 +1,31 @@
+<ion-view class="background" cache-view="false">
+  <ion-content class=" width80m">
+    <ion-refresher on-refresh="doRefresh()">
+    </ion-refresher>
+    <div>
+      <img class="width" src="/img/Top Banner.jpg" style="vertical-align: top;">
+      <div><img class="width" src="/img/main page banner.jpg"></div>
+      <h3 class="textCenter">FEEDBACK</h3>
+      <img class="Magnificent" src="/img/CKC - 6 Magnificent Showroom.png">
+      <div class="marginbottom">
+        <div ng-show="spinner" class="spinner">
+          <ion-spinner icon="android"></ion-spinner>
+        </div>
+        <div class="row responsive-sm" ng-repeat="item in shopdata" ng-if="$index % 3 === 0">
+          <div class="color col col-32 mobile mobilelg" ng-if="$index < shopdata.length" ng-click="optionsapage(shopdata[$index])">
+            <img ng-src="{{shopdata[$index].url}}" width="100%" class="image-sm" />
+            <h4 class="galleryNames ">{{shopdata[$index].shopname}}<span class="floatleft"> ></span> </h4>
+          </div>
+          <div class="color col col-32 mobile mobilelg" ng-if="$index + 1 < shopdata.length" ng-click="optionsapage(shopdata[$index+1])">
+            <img ng-src="{{shopdata[$index+1].url}}" width="100%" class="image-sm" />
+            <h4 class="galleryNames ">{{shopdata[$index+1].shopname}}<span class="floatleft"> ></span> </h4>
+          </div>
+          <div class="color col col-32 mobile mobilelg" ng-if="$index + 2 < shopdata.length" ng-click="optionsapage(shopdata[$index+2])">
+            <img ng-src="{{shopdata[$index+2].url}}" width="100%" class="image-sm" />
+            <h4 class="galleryNames ">{{shopdata[$index+2].shopname}}<span class="floatleft"> ></span> </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

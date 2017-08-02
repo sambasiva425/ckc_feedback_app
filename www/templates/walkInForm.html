@@ -1,0 +1,108 @@
+<ion-view hide-nav-bar='true' class="background">
+  <ion-content class="optionspage walkinfullwidth">
+    <div>
+      <img class="width" src="/img/Top Banner.jpg">
+      <div class="card marigin10 " ng-show="shows">
+        <div class="item item-text-wrap feedbackcolor centertext">
+          Dear {{customername}}, to give us your valuable feedback by clicking proceed...
+        </div>
+        <span class="item outline "> <button  ng-click="proceed()" class="buttonColor floatright">Proceed <span class="spancolor"> > </span> </button>
+        </span>
+      </div>
+      <div class="row surveymargin" >
+        <div class="col">
+          <div class="borders">
+            <div class="list marginform " ng-show="showss">
+              <form name="myForm" ng-submit="formdata(data)" novalidate>
+                <label class="item item-input outline margintop">
+                  <span class="input-label inputimage">Customer Name:</span>
+                  <input class="borderwidth address" name="Customer" placeholder="Full Name" type="text" ng-model="data.customer" ng-pattern="/^[a-zA-Z\s]*$/">
+                </label>
+                <p ng-show="myForm.Customer.$invalid && !myForm.Customer.$pristine" class="error">Please Enter Only Alphabets.</p>
+                <label class="item item-input outline input-box">
+                  <span class="input-label inputimage">Phone Number:</span>
+                  <input class="borderwidth phonenumber"  ng-minlength="10" 
+                   ng-maxlength="10"  name="phone" placeholder="Number" type="number" ng-model="data.phone" ng-required="true">
+                  <span class="unit">+91</span>
+                </label>
+                    <span class="error" 
+                  ng-show="((myForm.phone.$pristine || myForm.phone.$error.minlength ||
+                           myForm.phone.$error.maxlength) && 
+                           myForm.phone.$dirty) ">
+                           phone number should be 10 digits
+            </span>
+                <!-- <p ng-show="!myForm.phone.$pristine" class="error">phone number is required.</p> -->
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">E-mail ID:</span>
+                  <input class="borderwidth address" name="email" placeholder="E-mail ID" type="email" ng-model="data.email">
+                </label>
+                <p ng-show="myForm.email.$invalid && !myForm.email.$pristine" class="error">Enter Correct Email Address</p>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">Address:</span>
+                  <input class="borderwidth address" placeholder="Address 1" type="text" ng-model="data.address1">
+                </label>
+                <label class="item item-input outline">
+                  <input class="borderwidth address" placeholder="Address 2" type="text" ng-model="data.address2" style="max-width: 57%;padding-left: 7%;margin-left: 33%;">
+                </label>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">RM Name:</span>
+                  <input class="borderwidth address" placeholder="RM Name" ng-model="data.rm" type="text">
+                </label>
+                <span class="item item-input outline ">
+                    <div class="col"></div>
+                        <button ng-click="wakinpopup(data)"  class="buttonColor floatright">Proceed <span class="spancolor"> ></span> </button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+<script id="walkinpopupForm.html" type="text/ng-template">
+  <ion-modal-view class="walkinModel" style="height: 250px !important">
+    <ion-content class="popupboder" overflow-scroll="false">
+      <div class="list ">
+        <form ng-submit="">
+          <label class="item item-input left0 row ">
+            <span class="input-label fontsize resize col col-40">Customer Name:</span>
+            <input type="text" class="col  col-50 walkin" placeholder="Your name" ng-model="walkinformdata.customer" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input left0 row">
+            <span class="input-label fontsize resize col col-40">Phone Number:</span>
+            <input type="text" class="col  col-50 walkin" ng-model="walkinformdata.phone" placeholder="Phone number" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input left0 row">
+            <span class="input-label fontsize resize col col-40">E-mail ID:</span>
+            <input type="text" class="col col-50 walkin" ng-model="walkinformdata.email" placeholder="E-mail ID" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input left0 row">
+            <span class="input-label fontsize resize col col-40 addressmargin">Address:</span>
+            <textarea class="col col-50 walkin" ng-model="walkinformdata.address1" placeholder="Address" readonly></textarea>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input left0 row">
+            <span class="input-label fontsize resize col col-40">RM Name:</span>
+            <input type="text" class="col col-50 walkin" ng-model="walkinformdata.rm" placeholder="RM name" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <span class="item item-input left0 row">
+                  <div class="col col-40"></div>
+                  
+                   <div class="col col-40 resizebutton">
+                        <button ng-click="optionspage()" class="buttonColor  walkinEdit">
+                           <span class="spancolor"> < </span> Edit Details </button>
+          <button ng-click="walkinFormdata(walkinformdata)" class="buttonColor walkinEdit">
+            Confirm <span class="spancolor"> ></span>
+          </button>
+      </div>
+      </span>
+      </form>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+</script>

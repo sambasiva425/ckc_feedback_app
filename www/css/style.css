@@ -1,0 +1,842 @@
+/* Empty. Add your own CSS if you like */
+
+.spinner svg {
+  width: 19% !important;
+  height: 85px !important;
+  margin: 35% 35%;
+}
+
+input[type="number"].new {
+  padding-left: 27%;
+}
+
+.input-box {
+  position: relative;
+}
+
+.new:hover {
+  background: #c9252c;
+  color: white;
+}
+
+.unit {
+  position: absolute;
+  display: block;
+  left: 24%;
+  top: 14px;
+  font-size: 12px;
+  z-index: 9;
+}
+
+
+.marginbottom {
+  padding-bottom: 10%;
+}
+
+.optionspage {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 11px 0 84px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 570px) {
+
+  .adjust {
+    margin: 33% auto !important;
+  }
+  .borders {
+    border-radius: 3px;
+    background: white;
+    width: 85%;
+    margin: 50% auto !important;
+    background: white;
+  }
+
+
+  .surveyfont {
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    vertical-align: top;
+    /* margin-right: 25px; */
+    display: inline-block;
+    padding-right: 25px !important;
+  }
+
+  .phonenumber {
+    display: block;
+    border: 1px solid #d7d6d6;
+    background: #fff;
+    padding-left: 95px !important;
+    /*padding: 10px 20px 10px 30px; */
+    width: 195px;
+  }
+
+
+  .unit {
+    position: absolute;
+    display: block;
+    left: 95px;
+    top: 14px;
+    font-size: 13px;
+    z-index: 9;
+  }
+  .mobile {
+    width: 75% !important;
+    margin: 2% auto !important;
+    border-radius: 3px;
+  }
+  .image-sm {
+    margin: 3px 1px;
+    padding: 0% 2% 0% 1%;
+  }
+
+  .left0 {
+    margin-left: 6px !important;
+    border-width: 0px !important;
+    margin-top: 25px;
+  }
+
+  .floatleft {
+    padding-top: 2px;
+    float: right !important;
+    padding-right: 11%;
+    font-weight: 900;
+    margin-right: none !important;
+  }
+
+  .galleryNames {
+    margin: -3% 0 0% 20% !important;
+    color: #AB393D;
+    display: inline;
+    text-align: center;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+  }
+  .width80m {
+    width: 80%;
+    /*height: 100% !important;*/
+    margin: auto;
+    background-color: rgba(0, 0, 0, .3);
+  }
+}
+
+.width80m {
+  width: 80%;
+  height: initial;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.mobilelg {
+  max-width: 32.5%;
+}
+
+
+.background {
+  min-height: 48% !important;
+  background-image: url('/img/Side Banner.jpg');
+  background-repeat: repeat;
+  background-size: 16px;
+}
+
+.bar-header {
+  top: -4px;
+  /* border-top-width: 0; */
+  border-bottom-width: -5px;
+  width: 83%;
+  position: fixed;
+  margin: auto;
+}
+
+.width {
+  width: 100%;
+}
+
+.head {
+  width: 80%;
+  margin: auto;
+}
+
+.width80 {
+  width: 80%;
+  height: initial;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 11px 0 84px rgba(0, 0, 0, 0.4);
+}
+
+
+.survey80 {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 0px 80px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 11px 0 84px rgba(0, 0, 0, 0.4);
+}
+
+.textCenter {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.54);
+  font-family: arial;
+  font-size: 12px;
+}
+
+.Magnificent {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.bordermargin {
+  margin-right: 10px;
+  height: 100px;
+}
+
+.materialshowup {
+
+  margin: 40% 10%;
+  height: initial;
+  background-color: #dedede;
+  padding-bottom: 18%;
+}
+
+.color {
+  border-radius: 1px;
+  background-color: white !important;
+  margin: 2px;
+}
+
+.marginleftright {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.galleryNames {
+  margin: 0px;
+  color: #AB393D;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.floatleft {
+  float: right;
+}
+
+.buttonColor {
+  background-image: url('/img/Submit-Button.png');
+  background-size: 1px;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 10px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.buttonoption {
+  background-color: rgba(201, 37, 44, 0.74);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-family: arial;
+  display: block;
+  width: 53%;
+  height: 35px;
+  margin: 0 auto;
+  border: 0;
+  padding: 3px;
+  border-radius: 3px;
+  border-top: 1px outset rgba(201, 37, 44, .4);
+}
+
+.borders {
+  border-radius: 3px;
+  /*margin: 10% 6%;*/
+  background: white;
+  width: 85%;
+  margin: 20% auto;
+  background: white;
+}
+
+
+
+
+}
+.width60 {
+  width: 40%;
+  margin: auto;
+}
+.margin16 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.margintop {
+  margin-top: 20px;
+}
+.marginform {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+input[type="text"].walkin,
+textarea.walkin {
+  padding: 4px;
+  background-color: rgba(204, 204, 204, 0.57) !important;
+  border-radius: 3px !important;
+  max-height: 21px !important;
+  margin-bottom: 3px;
+  font-size: 13px;
+  font-family: arial;
+}
+textarea.walkin {
+  max-height: 40px !important;
+}
+input[type="text"].walkinsurvey,
+textarea.walkinsurvey {
+  padding: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 3px !important;
+  max-height: 52px !important;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-family: arial;
+}
+.bgcolor {
+  background-color: #dedede;
+}
+.marigin10 {
+  margin: 55% auto;
+  width: 88%;
+}
+.addressmargin {
+  margin-top: -27px;
+}
+.width0 {
+  margin-left: 3%;
+  border-width: 0px !important;
+  margin-top: 25px;
+}
+.left0 {
+  margin-left: -10px;
+  border-width: 0px !important;
+  margin-top: 25px;
+}
+.fontsize {
+  font-size: 11px;
+  font-family: arial;
+  margin-left: -5px;
+  color: #CD2E35;
+}
+.walkinEdit {
+  margin-top: 25px;
+  margin-right: 5px;
+  height: 23px;
+}
+.inputimage {
+  background-image: url('/img/Input Field Label.png');
+  background-repeat: no-repeat;
+  background-size: 105% 100%;
+  color: rgba(255, 255, 255, 0.68);
+  position: absolute;
+  padding: 8px;
+  font-size: 10px;
+  font-family: arial;
+  margin-left: -6px;
+}
+.margin0 {
+  margin-left: 0px !important;
+  font-size: 15px !important;
+}
+.borderpopup {
+  background-color: #eee;
+  padding: 0px;
+  border: 0;
+}
+.popup-head {
+  border-bottom: 0px;
+}
+input[type="text"].borderpop,
+input[type="number"].borderpop {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 42%;
+  background-color: white;
+  max-width: 100%;
+  font-size: 12px;
+  font-family: arial;
+}
+.floatright {
+  width: 32%;
+  height: 25px;
+  float: right;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.outline {
+  border-width: 0px !important;
+}
+input[type="text"].borderwidth,
+input[type="number"].borderwidth,
+input[type="email"].borderwidth {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 90%;
+  z-index: -1;
+  padding-left: 40%;
+  font-size: 14px;
+  max-height: 26px;
+  font-family: arial;
+}
+
+
+.spancolor {
+  color: white;
+}
+.input-label {
+  width: 40% !important;
+}
+.minheight {
+  min-height: 20% !important;
+}
+.materialpopheight {
+  margin: 15%;
+  min-height: 48% !important;
+}
+input[type="radio"]:before,
+input[type="radio"]:checked:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: red;
+}
+input[type="radio"] {
+  margin: 0;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+input[type="radio"]:before {
+  background-color: white;
+}
+.invoicepopup {
+  width: 78%;
+  padding: 17px;
+  margin-top: 87px;
+  margin-left: 34px;
+}
+
+.surveyfont1 {
+  color: red;
+  font-size: 12px;
+  font-family: arial;
+  vertical-align: top;
+  margin-right: 25px;
+}
+
+.border0 {
+  border: 0;
+}
+.centertext {
+  text-align: center;
+  font-size: 13px;
+  border: none;
+  font-family: arial;
+}
+.feedbackcolor {
+  color: rgba(0, 0, 0, 0.50);
+}
+.modal {
+  display: block;
+  position: absolute;
+  top: 9%;
+  z-index: 10;
+  overflow: hidden;
+  min-height: 47%;
+  border-radius: 5px;
+  width: 78%;
+  background-color: #fff;
+  margin-left: 11%;
+}
+.popupborder {
+  margin-left: 14px !important;
+  margin-top: 24px !important;
+}
+.materialmargin {
+  margin-left: -10px;
+  margin-right: 15px;
+  margin-top: 8%;
+  border: none;
+}
+.modal-backdrop,
+.modal-backdrop-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.lastoption {
+  margin-right: 0 !important;
+}
+.modal-open .modal-backdrop {
+  background-color: rgba(0, 0, 0, .7);
+}
+ion-modal-view ion-content.overflow-scroll {
+  overflow: auto;
+}
+
+.maxwidth {
+  max-width: 32%;
+}
+@media screen and (min-width: 450px) {
+
+  .input-label {
+    max-width: 21% !important;
+  }
+
+  .walinfullwidth {
+    height: 100vh;
+  }
+
+  .maxwidth {
+    max-width: 32.5%;
+  }
+
+  input[type="text"].borderwidth,
+
+  input[type="email"].borderwidth {
+    padding-left: 27%;
+  }
+
+  input[type="number"].borderwidth {
+    padding-left: 25%;
+  }
+
+  .floatleft {
+    float: right;
+  }
+
+  .fullwidth {
+    height: 100vh;
+  }
+
+  .heightadminlabel {
+    height: 49px;
+        width: 123%;
+  }
+
+  .bottm {
+    margin-bottom: -20px !important; 
+  }
+
+  .surveywidth {
+    height: 125vh;
+  }
+
+  .width80 {
+    width: 80%;
+    height: 100% !important;
+    margin: auto;
+  }
+
+  .resize {
+    margin-left: 52px;
+    margin-right: 2%;
+  }
+
+  .resizebutton {
+    margin-left: 133px;
+  }
+
+  .floatright {
+    width: 22%;
+    margin-right: 19px;
+  }
+
+  .buttonoption {
+    width: 30%;
+    height: 34px;
+  }
+
+  .address {
+    max-width: 73% !important;
+    padding-left: 4% !important;
+    margin-left: 17% !important;
+  }
+
+  .optionspopup {
+    max-width: 48%;
+    margin: 20% 24%;
+    max-width: 57%;
+    /*  margin: 0 22%;*/
+    */ border-radius: 3px;
+    /*height: 36vh;*/
+  }
+
+
+  .marginleft {
+    margin-left: 29%;
+  }
+}
+
+.walkinModel {
+  min-height: 30% !important;
+  top: 27%;
+  /*bottom: 10% !important;*/
+}
+
+.optionmargin {
+  margin-top: 75%;
+}
+
+.thankyou {
+  width: 80%;
+  margin: 40% auto;
+}
+
+@media screen and (min-width: 570px) {
+  .surveyfont {
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    vertical-align: top;
+    /*margin-right: 25px;*/
+    display: inline-block;
+    padding: 1px 5px;
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 450px) and (orientation: landscape) {
+
+  input[type="number"].borderpop {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 34%;
+    background-color: white;
+    max-width: 100%;
+    font-size: 13px;
+    font-family: arial;
+  }
+
+  .materialpopheight {
+    margin: 5% 12%;
+    min-height: 74% !important;
+  }
+
+  .optionspage {
+    height: 100vh;
+  }
+
+  .marigin10 {
+    margin: 25% auto;
+    width: 70%;
+  }
+
+  .walkinfullwidth {
+    height: initial;
+  }
+
+  .walkinModel {
+    top: 26%;
+  }
+
+  .optionmargin {
+    margin: 30% 0;
+  }
+}
+
+.borderadmin {
+  /*border-bottom: 1px solid #ccc;*/
+  padding: 5%;
+  cursor: pointer;
+  color: #a7b1c2;
+}
+.mariginauto {
+  width: 60%;
+  margin: auto;
+}
+.whitecolor {
+  color: black;
+}
+.shopbutton {
+  height: 35px;
+  float: right;
+  margin: 12px;
+  width: 22%;
+}
+.marginleft {
+  background: white;
+  margin-top: -10px;
+  margin-left: -6px;
+}
+.marginright {
+  width: 80%;
+  margin: auto;
+}
+
+.log:hover {
+  background: #CD2E35;
+  color: white;
+  padding: 1px 20px;
+}
+.header {
+  /*border-bottom: 1px solid #c9252c;*/
+  margin-bottom: 4px;
+}
+
+.headerborder {
+  border-bottom: 1px solid #c9252c;
+}
+.borderright {
+  /*border: 1px solid #c9252c;*/
+  padding: 0% 7%;
+  padding-bottom: 10%;
+}
+.headername {
+  color: rgba(0, 0, 0, 0.26);
+}
+.login {
+  height: 100%;
+}
+.login #register {
+  margin-top: 5%;
+}
+.login #register img {
+  height: 145px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.login #register form * {
+  width: 80%;
+  padding: 15px;
+  height: initial;
+  font-size: initial;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+.login #register form .guestBtn {
+  background-color: #c9252c;
+  color: #fff;
+}
+.errormsg {
+  color: red;
+}
+.logout {
+  float: right;
+  margin-top: 81px;
+  margin-right: 6%;
+  color: #a7b1c2;
+  cursor: pointer;
+}
+
+.backgroundright {
+   margin-top: -8px;
+  background: rgba(237, 237, 237, 0.69) !important;
+}
+
+.borderbottom {
+  border-bottom: 1px solid #66afe9 !important;
+}
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.hrborder {
+
+  border: 2px solid #ccc;
+  margin-left: 24px;
+  margin-right: 30px;
+}
+
+.borderrighttable {
+  /*border: 1px solid #c9252c;*/
+  padding: 2%;
+  padding-bottom: 10%;
+}
+
+#table-wrapper {
+  position: relative;
+}
+#table-scroll {
+  height: 350px;
+  overflow: auto;
+  margin-top: 20px;
+}
+#table-wrapper table {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  margin-left: 40%;
+}
+
+
+.button.button-positive {
+  border-radius: 5px;
+  background-color: #c9252c !important
+}
+
+@media screen and (min-width: 600px) {
+  body.keyboard-open .optionspopup {
+    max-width: 50%;
+    margin: -4px 25%;
+    border-radius: 3px;
+    height: 45vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  body.keyboard-open .materialshowup {
+    max-width: 80%;
+    margin: 21% 10%;
+    height: 36% !important;
+  }
+}
+@media screen and (min-width:850px) {
+  .optionspopup {
+    width: 35% !important;
+  }
+}
+
+
+/*
+@media screen and (max-width: 730px) {
+.keyboard-up .optionspopup {
+  max-width: 80%;
+  margin: -4px 10%;
+  border-radius: 3px;
+  height: 40vh; 
+}
+}
+
+*/

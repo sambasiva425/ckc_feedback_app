@@ -1,0 +1,112 @@
+<ion-view hide-nav-bar='true' class="background">
+  <ion-content class="width80 fullwidth">
+    <div>
+      <img class="width" src="/img/Top Banner.jpg">
+      <div class="card marigin10" ng-show="shows">
+        <div class="item item-text-wrap feedbackcolor centertext">
+          Dear {{materialFormdata.name}}, to give us your valuable feedback by clicking proceed...
+        </div>
+        <span class="item outline "> <button  ng-click="materialsurvey()" class="buttonColor floatright">Proceed <span class="spancolor"> > </span> </button>
+        </span>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="borders">
+            <div class="list marginform" ng-show="showss">
+              <form ng-submit="material(data)">
+                <label class="item item-input outline margintop">
+                  <span class="input-label inputimage">Customer ID:</span>
+                  <input class="borderwidth address" ng-change="getvalues(data.customer)" placeholder="Customer ID" type="text" ng-model="data.customer">
+                </label>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">Customer Name:</span>
+                  <input class="borderwidth address" placeholder="Name" type="text" ng-model="data.name">
+                </label>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">Phone Number:</span>
+                  <input class="borderwidth address" placeholder="Number" type="text" ng-model="data.number">
+                </label>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">E-mail ID:</span>
+                  <input class="borderwidth address"  placeholder="E-mail ID" type="text" ng-model="data.email">
+                </label>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">Address:</span>
+                  <input class="borderwidth address" placeholder="Address 1" type="text" ng-model="data.address">
+                </label>
+                <label class="item item-input outline">
+                  <input class="borderwidth address" placeholder="Address 2" ng-model="data.address2" type="text" style="max-width: 57%; padding-left: 7%;margin-left: 33%;">
+                 
+                </label>
+                <label class="item item-input outline">
+                  <span class="input-label inputimage">RM Name:</span>
+                  <input class="borderwidth address" placeholder="RM Name" type="text" ng-model="data.rm">
+                </label>
+                <span class="item outline ">                      
+                      <button  ng-click="materialisedpopupform(data)" class="buttonColor floatright">Proceeds <span class="spancolor"> > </span>
+                </button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+<script id="materialpopupForm.html" type="text/ng-template">
+  <ion-modal-view class="materialpopheight">
+    <ion-content>
+      <div class="list ">
+        <form ng-submit="">
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">Invoice No:</span>
+            <input type="text" class="col  col-50 walkin" ng-model="materialFormdata.customerid" placeholder="Your name" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">Customer ID:</span>
+            <input type="text" class="col  col-50 walkin" ng-model="materialFormdata.customer" placeholder="Your name" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">Customer Name:</span>
+            <input type="text" class="col  col-50 walkin" ng-model="materialFormdata.name" placeholder="Your name" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">Phone Number:</span>
+            <input type="text" class="col  col-50 walkin" ng-model="materialFormdata.number" placeholder="Phone number" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">E-mail ID:</span>
+            <input type="text" class="col col-50 walkin" ng-model="materialFormdata.email" placeholder="E-mail ID" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">Address:</span>
+            <textarea class="col col-50 walkin" ng-model="materialFormdata.address1" placeholder="Address" readonly></textarea>
+            <span class="col col-10"></span>
+          </label>
+          <label class="item item-input width0 row">
+            <span class="input-label fontsize resize col col-40">RM Name:</span>
+            <input type="text" class="col col-50 walkin" ng-model="materialFormdata.rm" placeholder="RM name" readonly>
+            <span class="col col-10"></span>
+          </label>
+          <span class="item item-input left0 row">
+                  <div class="col col-40 "></div>
+                  
+                   <div class="col col-40 resizebutton">
+                        <button ng-click="optionspage()" class="buttonColor  walkinEdit">
+                         <span class="spancolor"> < </span> Edit Details </button>
+          <button ng-click="materialformpopup(materialFormdata)" class="buttonColor walkinEdit">
+            Confirm <span class="spancolor"> > </span>
+          </button>
+      </div>
+      </span>
+      </form>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+</script>

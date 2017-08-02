@@ -1,0 +1,14 @@
+<ion-view>
+    <ion-content class="login">
+            <div id="register" class="col col-offset-20 col-50">
+            <img src=".//img/logo Thumbnail.png" alt="logo" />
+                <form ng-submit="submit(data)">
+                    <input class="input" type="text" name="" placeholder="User name" ng-model="data.username" />
+                    <input class="input" type="text" name="" placeholder="password" ng-model="data.password" />
+                    <button class="guestBtn">GUEST</button>
+
+                    <p ng-if="msg != ''" class="errormsg">{{msg}}</p>
+                </form>
+            </div>
+    </ion-content>
+</ion-view>

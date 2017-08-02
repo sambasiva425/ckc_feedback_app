@@ -1,0 +1,60 @@
+<ion-view hide-nav-bar='true' class="background">
+  <ion-content class="survey80 ">
+    <div>
+      <img class="width" src="/img/Top Banner.jpg">
+      <div class="adjust">
+        <div class="marginbottom">
+          <div class="card bgcolor" ng-show="survey1" style="
+                   margin: 20% 6%;">
+            <form ng-submit="selectAnswers(selectedtype)" name="form">
+              <div class="item item-text-wrap border0 bgcolor" ng-repeat="itemss in optionsdata.slice(0,4)">
+                <h3 ng-model="questions">{{itemss.qn}}</h3>
+                <label class="radio-inline surveyfont" ng-repeat="radio in itemss.ans">
+                  <input type="radio" name="selectedtype{{$parent.$index}}" value="{{radio}}~{{itemss.priority}}" ng-model="$parent.selectedtype[itemss.qn]" required="true" />&nbsp;{{radio}}
+                </label>
+              </div>
+              <!-- {{selectedtype}} -->
+              <span class="item item-input outline bgcolor">
+                        <div class="col"></div>
+                        <button ng-click="page1(form.$invalid)" class="buttonColor floatright">Proceed > </button>
+                    </span>
+            </form>
+          </div>
+        </div>
+        <div class="marginbottom">
+          <div class="card bgcolor " ng-show="survey2" style="
+    margin: 15% 6%;">
+            <form name="form1">
+              <div class="item item-text-wrap border0 bgcolor" ng-repeat="itemss in optionsdata.slice(5,8)">
+                <h3 ng-model="questions">{{itemss.qn}}</h3>
+                <label class="radio-inline surveyfont" ng-repeat="radio in itemss.ans">
+                  <input type="radio" name="selectedtype{{$parent.$index}}" value="{{radio}}~{{itemss.priority}}" ng-model="$parent.selectedtype[itemss.qn]" required="true" />&nbsp;{{radio}}
+                </label>
+              </div>
+              <span class="item item-input outline bgcolor">
+                    <div class="col"></div>
+                    <button ng-click="page2(form1.$invalid)" class="buttonColor floatright">Proceed > </button>
+                </span></form>
+          </div>
+        </div>
+        <div style="padding-bottom: 35%">
+          <div class="card" ng-show="survey3" style="
+    margin: 0% 6%;">
+            <form name="form2">
+              <div class="item item-text-wrap border0 bgcolor" style="margin-top: -20px" ng-repeat="item in questiontype.slice(0,3)" ">
+                    <label class="radio-inline surveyfont1 ">
+                        <h3>{{item.questions}}</h3>
+                        <textarea type="textarea " class="walkinsurvey " style="width:100% " ng-model = "$parent.selectedtype[item.questions] " required="true ">
+                        </textarea>
+                    </label>
+                </div>
+
+                 <span class="item item-input outline bgcolor ">
+                    <div class="col "></div>
+                    <button ng-click="page3(form2.$invalid) " class="buttonColor floatright ">Proceed > </button>
+                </span></form>
+            </div></div></div>
+          
+        </div>
+    </ion-content>
+</ion-view>
